@@ -5,22 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <h1>Underwriter Dashboard</h1>
+    <p>Twin Maples Specialty - Quote Intake Management</p>
 </head>
 <body>
 
-
-    <div class="container" id="quoteContainer">
-        <!-- Quote submissions will appear here -->
-        <div class="quote-card">
-          <h3>Sample Submission</h3>
-          <p><span class="label">Business Name:</span> Sample Biz LLC</p>
-          <p><span class="label">State:</span> GA</p>
-          <p><span class="label">Annual Revenue:</span> $2,500,000</p>
-          <p><span class="label">Coverage Requested:</span> $1M / $2M</p>
-          <p><span class="label">Prior Claims:</span> No</p>
-          <p><span class="label">Broker Email:</span> broker@example.com</p>
-        </div>
+    <div class="container">
+        <table class="quote-table">
+          <thead>
+            <tr>
+              <th>Business Name</th>
+              <th>State</th>
+              <th>Revenue</th>
+              <th>Industry</th>
+              <th>Coverage</th>
+              <th>Employees</th>
+              <th>Claims</th>
+              <th>Legal Actions</th>
+              <th>Broker Email</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="quoteTableBody">
+            <tr class="main-row" onclick="toggleDetails(this)">
+              <td contenteditable="true">Sample Biz LLC</td>
+              <td contenteditable="true">GA</td>
+              <td contenteditable="true">$2,500,000</td>
+              <td contenteditable="true">Consulting</td>
+              <td contenteditable="true">$1M / $2M</td>
+              <td contenteditable="true">18</td>
+              <td contenteditable="true">No</td>
+              <td contenteditable="true">No</td>
+              <td contenteditable="true">broker@example.com</td>
+              <td>
+                <select class="status-select">
+                  <option value="pending" selected>Pending</option>
+                  <option value="reviewed">Reviewed</option>
+                  <option value="rejected">Rejected</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="details-row">
+              <td colspan="10">
+                <strong>Submission Details:</strong><br>
+                <ul>
+                  <li>Business Address: <input class="editable-input" type="text" value="123 Peachtree St, Atlanta, GA"></li>
+                  <li>Years in Business: <input class="editable-input" type="number" value="10"></li>
+                  <li>Submitted On: <input class="editable-input" type="date" value="2025-07-13"></li>
+                  <li>Notes: <textarea class="editable-input" rows="3">Interested in bundling professional liability and cyber coverage.</textarea></li>
+                  <li>Uploaded Docs: <a href="#">biz-docs.pdf</a></li>
+                </ul>
+                <button class="save-btn">Save Changes</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+    
+
+
+    
 
     <script src="script.js"></script>
 </body>
