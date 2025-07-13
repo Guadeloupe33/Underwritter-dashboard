@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+  }
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  .container {
+    padding: 30px;
+  }
+  .quote-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  .quote-table th, .quote-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+  .quote-table th {
+    background-color: #e5eaf0;
+    font-weight: bold;
+    color: #003366;
+  }
+  .quote-table tr:hover {
+    background-color: #f1f5f9;
+    cursor: pointer;
+  }
+  .status-select {
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  .details-row {
+    display: none;
+    background-color: #f9fbfd;
+  }
+  .details-row td {
+    padding: 10px 15px;
+    border-top: none;
+    font-size: 14px;
+  }
+  .editable-input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .save-btn {
+    margin-top: 10px;
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
