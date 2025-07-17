@@ -1,4 +1,4 @@
-# Underwritter-dashboard# Twin Maples Quote Tool - Underwriter Dashboard
+# Underwriter Dashboard Twin Maples Quote Tool 
 
 This project is a front-end prototype for the **Twin Maples Specialty Underwriter Dashboard**, part of a larger quote-and-bind solution designed for Starr Insurance's wholesale broker platform.
 
@@ -23,9 +23,7 @@ The dashboard allows underwriters to:
 4. Use the dropdown to change the status.
 5. Click **"Save Changes"** (static, currently non-functional).
 
-## Next Steps (Optional Enhancements)
-- Connect to backend API (Node.js + MongoDB) to fetch and persist quote data.
-- Implement authentication for underwriters.
+
 - Add filtering/sorting/search tools.
 - Show notifications or track submission changes.
 
